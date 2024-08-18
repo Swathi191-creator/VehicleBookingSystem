@@ -1,0 +1,264 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+ padding-top: 45px;
+}
+
+.carousel-img {
+  max-width: 100%;
+  height: auto; 
+}
+
+.carousel-item {
+  min-height: 250px;
+  background: no-repeat center center scroll;
+  background-size: cover; 
+}
+
+.carousel-caption {
+  color: black;
+}
+
+.carousel-caption h3, 
+.carousel-caption p {
+  color: #F20505;
+}
+
+.portfolio-item {
+  margin-bottom: 30px; 
+}
+
+.custom-navbar {
+  background-color: #071A40; 
+}
+
+header {
+  padding-top: 20px; /* Adjust the value as needed */
+}
+
+.carousel-inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(1); 
+}
+
+.card-header {
+  background-color: #038C65; 
+  color: #ffffff; 
+  font-weight: bold; 
+}
+
+.card-body {
+  font-family: 'Arial', sans-serif; 
+}
+
+.blockquote {
+  border-left: 5px solid #023E73; 
+  padding-left: 15px;
+  margin-left: 0;
+  margin-right: 0;
+  color: #333;
+}
+
+.blockquote p {
+  font-size: 1.1rem; 
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #023E73; 
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555; 
+}
+
+.card-img-top {
+  height: 200px; 
+  object-fit: cover;
+  border-bottom: 1px solid #ddd; 
+}
+
+.rounded-top {
+  border-radius: 0.25rem 0.25rem 0 0; 
+}
+
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px); 
+}
+
+.shadow-sm {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+}
+
+.border-light {
+  border-color: #ddd;
+}
+
+@media (max-width: 768px) {
+  .card-text {
+    font-size: 0.9rem; 
+  }
+}
+
+.testimonial-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); 
+}
+
+.testimonial-card .card-body {
+  position: relative;
+  padding: 1.5rem;
+  background: #f8f9fa; 
+}
+
+.testimonial-card .blockquote-footer {
+  font-size: 1rem;
+  color: #6c757d;
+  text-align: right;
+  font-style: italic;
+}
+
+.testimonial-card .card-body::before {
+  content: '\201C'; 
+  font-size: 4rem;
+  color: #ff6f61; 
+  position: absolute;
+  top: -20px;
+  left: 15px;
+  z-index: 1;
+}
+
+.testimonial-card .card-body footer {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .testimonial-card .card-body {
+    padding: 1rem;
+  }
+  
+  .testimonial-card .blockquote-footer {
+    font-size: 0.9rem;
+  }
+}
+
+.typing-demo {
+  max-width: 40ch; 
+  animation: typing 4s steps(30), blink 0.75s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 3em;
+  color: #071A40; 
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40ch; 
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media (max-width: 430px) {
+  .typing-demo {
+    font-size: 1.5em; 
+    white-space: normal; 
+    max-width: 100%;
+    animation: typing 6s steps(40), blink 0.75s step-end infinite;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%; 
+    }
+  }
+}
+
+
+.diamond {
+  width: 100px;
+  height: 100px;
+  background: #ff5733;
+  position: fixed;
+  transform: rotate(45deg);
+  /* opacity: 0.8; */
+  animation: amoebaMove 10s linear infinite;
+  z-index: -1; /* Ensure diamonds are above other content */
+}
+
+@keyframes amoebaMove {
+  0% {
+    transform: rotate(45deg) translate(0, 0);
+  }
+  25% {
+    transform: rotate(45deg) translate(10px, 20px);
+  }
+  50% {
+    transform: rotate(45deg) translate(20px, 0px);
+  }
+  75% {
+    transform: rotate(45deg) translate(10px, -20px);
+  }
+  100% {
+    transform: rotate(45deg) translate(0, 0);
+  }
+}
+
+.diamond-top {
+  top: 15%; /* Adjust this value as needed */
+  left: 5%;
+}
+
+.diamond-top2 {
+  background-color: #023E73;
+  top: 25%; /* Adjust this value as needed */
+  left: 2%;
+}
+
+
+
+
+.diamond-bottom {
+  bottom: 10%; /* Adjust this value as needed */
+  right: 5%;
+}
+
+.diamond-bottom2 {
+  background-color: #023E73;
+  bottom: 20%; /* Adjust this value as needed */
+  right: 2%;
+}
